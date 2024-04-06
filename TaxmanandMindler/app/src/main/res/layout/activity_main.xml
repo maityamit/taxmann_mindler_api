@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/app_background"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+
+
+    <ImageView
+        android:id="@+id/quiz_text"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="50dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/taxmann"/>
+
+    <TextView
+        android:id="@+id/home_page_app_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/quiz_text"
+        android:layout_marginStart="20dp"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:layout_marginEnd="20dp"
+        android:textColor="#3F51B5"
+        android:text="Taxmann &amp; Mindler"/>
+
+    <!--    <ImageView-->
+    <!--        android:layout_width="50dp"-->
+    <!--        android:layout_height="50dp"-->
+    <!--        android:layout_toLeftOf="@id/image_question_mark"-->
+    <!--        android:layout_above="@id/home_page_app_name"-->
+    <!--        android:src="@drawable/trophy"/>-->
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:src="@drawable/star" />
+
+    <ImageView
+        android:id="@+id/image_question_mark"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="100dp"
+        android:src="@drawable/question_mark"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/rounded"
+        android:layout_marginTop="220dp">
+
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_marginStart="20dp"
+            app:cardCornerRadius="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginEnd="20dp"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:background="@drawable/button_background"
+                android:orientation="vertical">
+
+
+                <EditText
+                    android:id="@+id/userName"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:hint="Enter Your Name"
+                    android:paddingStart="15dp"
+                    android:textColor="@color/white"
+                    android:inputType="textPersonName"
+                    android:textColorHint="@color/white"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginBottom="10dp"
+                    android:backgroundTint="@color/white"
+                    android:background="@drawable/options_btn_bg">
+
+                </EditText>
+
+                <RadioGroup
+                    android:id="@+id/radio_group"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="15dp">
+
+
+                    <RadioButton
+                        android:id="@+id/easy"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Beginner"
+                        android:textColor="@color/white"/>
+
+                    <RadioButton
+                        android:id="@+id/medium"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Intermediate"
+                        android:textColor="@color/white"/>
+
+                    <RadioButton
+                        android:id="@+id/hard"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Advanced"
+                        android:textColor="@color/white"/>
+
+                </RadioGroup>
+
+                <LinearLayout
+                    android:id="@+id/checkBox_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:orientation="vertical">
+
+                    <CheckBox
+                        android:id="@+id/checkBox"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="React"
+                        android:textColor="@color/white"
+                        android:textSize="18sp"
+                        android:padding="7dp"/>
+
+                    <CheckBox
+                        android:id="@+id/checkBox2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Node JS"
+                        android:textColor="@color/white"
+                        android:textSize="18sp"
+                        android:padding="7dp"/>
+
+                </LinearLayout>
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/play_quiz_button"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/button_background"
+                    android:layout_marginBottom="20dp"
+                    android:textAllCaps="false"
+                    android:backgroundTint="#FFEB3B"
+                    android:textStyle="bold"
+                    android:text="Start Quiz"/>
+
+            </LinearLayout>
+
+
+
+        </androidx.cardview.widget.CardView>
+
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
